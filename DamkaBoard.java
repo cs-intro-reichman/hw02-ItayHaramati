@@ -5,9 +5,11 @@ public class DamkaBoard {
 	public static void main(String[] args) {
 		int n = Integer.parseInt(args[0]); 
 		for(int i = 0; i < n; i++){
+			for (int m = n - i; m % 2 == 0; m--){
+				System.out.print(" ");}   
 			for(int j = 0; j < n; j++){
-				System.out.print("*");}
-				System.out.println();
+				System.out.print("* ");}
+		System.out.println(" ");
 			}
 		}
 	}
