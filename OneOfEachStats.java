@@ -8,6 +8,8 @@ import java.util.Random;
  *  Example usage: % java OneOfEachStats 1000 1
  */
 public class OneOfEachStats {
+		// TODO: nice code and solution!
+
 		public static void main (String[] args) {
 			// Gets the two command-line arguments
 			int T = Integer.parseInt(args[0]);
@@ -36,7 +38,8 @@ public class OneOfEachStats {
 			for (int t = 0; t < T; t++) {
 				// The "while" counts how many children until at least
 				// one of each gender.
-				firstChild = generator.nextDouble() > 0.5 ? 'b' : 'g';
+				firstChild = generator.nextDouble() > 0.5 ? 'b' : 'g'; // TODO: A local variable should be declared close to the place in the code in which it is used
+																	   // Just could to declare it here
 				while (!isOneOfEach) {
 					child = generator.nextDouble() > 0.5 ? 'b' : 'g';
 					if (child != firstChild) {
@@ -69,4 +72,6 @@ public class OneOfEachStats {
 			System.out.println("Number of families with 4 or more children: " +
 								fourOrMoreChilds);
 			System.out.println("The most common number of children is " +
-								mostCommon + ".");}}
+								mostCommon + ".");
+		} // TODO: this is the correct place of curle braces!
+} // TODO: this is the correct place of curle braces!
